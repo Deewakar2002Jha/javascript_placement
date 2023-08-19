@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basic</title>
+    <style>
+        .title{
+            color:red;
+            font-size: 2rem;
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="title">How to change element using Javascript (getElementById method)</div>
+    <div>
+        <p>Before using the Javascript output</p>
+        <div id="word1">hello,world</div>
+        <div id="word2">This is Javascript 01</div>
+    </div>
+    <div>
+        <p>After using the Javascript output</p>
+        <div id="word3">hello,world</div>
+        <div id="word4">This is Javascript 01</div>
+    </div>
+     <script>
+        document.getElementById("word3").innerHTML="welcome to world";
+        document.getElementById("word4").innerHTML="Javascript is awesome";
+    </script>
+</body>
+</html>
