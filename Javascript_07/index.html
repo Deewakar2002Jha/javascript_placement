@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Array with Javascript</title>
+    <script>
+        function myNumber(x,y){//fuction formal argumnetsand parameter
+        //function body
+
+        return x+y;
+
+        //calling the fuction
+
+    }
+    let d = myNumber(20,30);//actual arguments and parameter
+
+        console.log(d);
+      //  alert(d);//calling fuction 
+
+        //Aleart is the PREDEFINE fuction
+        //myNumber is userdefine fuction
+
+
+        /*Array fuction before using array */
+
+        //how make student list of the class
+
+       // var stud1 = 'deewkar';
+
+       //how store more than one value in array
+
+       //Javascript always start with index number with 0  
+
+    var students = ['Deewakar','priyesh','kishan',"vadant",'rahul'];  
+    let ages = [21,26,19,20,54]; 
+    console.log(students);
+    console.log(students[3]);
+
+    console.log('hello' +" "+ students[3] +" " +'how are you ?s')
+
+    
+   // alert("hello"+" "+students[2]+" "+"how are you ?")
+    //concontation of string
+    console.log(ages);
+   // alert(students);
+
+/* create two fuction myAges and myGreet and calling its values by using for loop*/
+function myGreet(m){
+    console.log('hello '+m+' how are you?');
+}
+myGreet(students[0]);
+
+
+
+function myAges(n){
+console.log('My ages is '+n);
+}
+myAges(ages[0]);
+
+
+//how to greet every stydent in the list
+
+
+//using for loop
+
+/*
+    for(initialization;condition;increment/decrement)
+    {
+
+    }
+
+*/
+for(var i=0;i<=4;i++){
+    myGreet(students[i]);
+}
+for(var i=0;i<=4;i++){
+    myAges(ages[i]);
+}
+    </script>
+</head>
+<body>
+    <div>learn Array with javascripts</div>
+</body>
+</html>

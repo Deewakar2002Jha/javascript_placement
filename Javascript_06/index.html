@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return fuction and function as Arguments</title>
+</head>
+<body>
+    <div>1) learning the Javascript using return fuction</div>
+    <div>
+        2) use the console tab to see the result
+    </div>
+    <script>
+        // function declration
+        //using proper naming convection
+        function myTest(x,y){//x and y are formal arguments/parameter
+            //fuction body
+
+            return x + y;//function always return something like 30
+            // when every you use the return keyword you need to catch the return value
+
+
+        }
+
+        //calling the function
+    let result = myTest(10,20);  //30 
+
+    console.log(result);
+
+    //calling the same function inside the the same function
+    // fuction as Arguments
+    let result2 = myTest(400,myTest(20,30));
+
+    //printing the calling function
+
+    console.log(result2);
+
+    function num1(x){
+        return 10;
+    }
+    function num2(y){
+        return 20;
+    }
+    function num3(x,y){
+        return x + y;
+    }
+    //fuction as a argument
+
+    let z = num3(num1(),num2());
+
+    console.log(z);
+
+
+
+    </script>
+</body>
+</html>

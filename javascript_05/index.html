@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuction Calling with Naming Convection</title>
+</head>
+<body>
+    <div>
+        Welcome to Javascript Toturial
+    </div>
+    <Script>
+        //declartion  of variable
+        var deewakarjha
+        var rahuljha
+        // declartion and initialization
+        rahuljha = 10;
+        deewkarjha =20;
+
+        console.log(deewkarjha + rahuljha);
+
+        // function defination
+        function myNameA(name){//formal parameter and formal argument
+            console.log('hello ' + name);
+            //calling 2 function inside 1st function
+            myNameB(name);
+            myNameC(name +' '+'how you coding going!');
+
+            /* In uper fuction we are calling the second
+             function parameter by using the first fuction parameter .*/
+        }
+        //function calling
+        myNameA('deewakar jha');//actual parameter and actual parameter
+
+        //defination of function
+        function myNameB(msg){
+            console.log('how are you ' + msg);
+            //calling the 3 function inside the 2 function by using the all the fuction parameter.
+            
+        }
+
+        //declaration of function
+        function myNameC(pintu){
+            console.log('Welcome to javascript tutorial ' + pintu);
+        }
+        /*check why is it not working
+        myNameC(name + msg);
+        */
+
+    </Script>
+</body>
+</html>
