@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object</title>
+    <style>
+        .box{
+            font-family: serif;
+            font-weight: bold;
+            font-size: 5em;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"> learning the  Javascript object</div>
+    <script>
+        // variable difination
+        /*
+         {
+            property:value,
+            property:value,
+            property:value,
+            functions
+         }
+        */
+        var student  = {
+            //we can write an property without '' and "" qoute but we have to give "" and '' quote to the value other wise is show error.
+
+
+            'name':"deewakar",//string
+            'surname':'jha',
+            addres:'samastipur',
+            friends:['priyesh',"kishan",'vandant',"harsh"],//javascript array
+            teacher:[{
+                        name:'anil dollar',
+                        contact:'9006422475',
+                        address:'uttar pardas'
+                     },
+                     {
+                        name:'khan sir',
+                        contact:'9006422476',
+                        address:'bihar,patna'
+                     }] //array of js object
+        }; // js object
+
+        //object.member
+
+        alert(student.name);
+        console.log(student.name);
+        console.log(student.surname);
+        console.log(student.friends[0]);//we have to squre bracket bescause friends is a array.
+        //check how many friend does deewkar have.
+        //"+student.friends.length+"
+        // this find will check the in js object with a name student and go to friends member then check the lenght of the friend array.
+        console.log(student.name+" "+"Have"+" " +student.friends.length+" "+"friends");
+        console.log(student.name+" "+"Have"+" " +student.teacher.length+" "+"teacher");
+
+        //deeakar have to teacher
+        // console.log(student.teacher+" "+"have"+" "+student.teacher.length+" "+"teacher");
+        /* for(initialization;condition;increment/decrement*/
+        for(i=0;i<student.teacher.length;i++){
+            console.log(student.teacher[i].name+" "+student.teacher[i].contact+" ")
+        }
+        var x = ['Mukesh',student]; //Array contain js Object
+    </script>
+</body>
+</html>
