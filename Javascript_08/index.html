@@ -4,10 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fat Arrow Function</title>
+    <style>
+        .box{
+            width:500px;
+            height: 200px;
+            color: #fff;
+            font-size: 0.9em;
+            margin:100px auto;
+            border-radius: 0.5em;
+            text-align: center;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,40,9,1) 35%, rgba(0,212,255,1) 100%);
+        }
+    </style>
 </head>
 <body>
+    <div class="box">Fat Arrow Function Using ES6 version of Javascript</div>
     <script>
+        // function Defination
+        //using ES6 version of Javascript
+        //function name are always written in camelCase
+        let myFunction = (D) =>{// n is a formal argument
+            //function
+            console.log('hello everyone how are you ?');
+            //using alert function if you don't want to go to console tab
+            //alert('hello everyone how are you ?');
+
+        }
+
+        //2. function calling
+
+        myFunction('deewakar Jha');//deewkar jha is a actual argument
+        // defination of function
+        let myFunctionC = (C) =>{
+            console.log('hello'+' '+C+' '+'how are you');
+
+            //function returning somthing
+
+            return C;
+
+        }
+        //calling the function
+
+        myFunctionC('Rahul Jha');
+
+        //function using SPREAD OPERATOR
+
+        let a = ['deewkar','rahul','priyesh'];
+
+        console.log(a);
+
+        //checkig the lenght of the array ussing the lenght function
+        //object.member
+
+        console.log(a.length);
+
+        let b = [...a,'ritik','aman','amit','kishan'];
+        console.log(b);
+
+        console.log(b.length);
+
+        //An arrow function expression is compact alternative to a traditional
+
+        let x = ['an','arrow'];
+        let y = [...x,'function'];
+        let z = [...y,"expersession"];
+        let e = [...z,"is"];
+
+        console.log(e);
+
+        //if you want to covert array into string from then use the loop
+        var  paragraph='';
+        for(var i=0; i<e.length; i++){// array length fuction 
+            console.log(e[i]);
+        //in this the element in the list of array is store inside the paragraph and we also add a space between all the element of the array
+       // paragraph = paragraph + e[i]+' '; not optimized
+            paragraph += e[i] + ' ';//Optimized fast 
+        }
+        console.log(paragraph);
+
+
         
+
     </script>
 </body>
 </html>
