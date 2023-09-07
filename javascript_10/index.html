@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object </title>
+    <style>
+        .color{
+            color: red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="color">
+        Javascript object with the function of array
+    </div>
+    <div class="color">
+        using deifferent type of loop
+    </div>
+    <script>
+        let x = {
+            //member
+            //1.property:value;
+            //2. function/method
+            name:"S K JHA",
+            surname:"Class",
+            myFunctA:() =>{
+                //Function Defination
+               // console.log(this.);//this = self = current object
+                //object.member
+                console.log("My Coching Name"+" "+this.name);
+            },
+            myFunctB:() =>{
+
+            }
+
+           // myFunctA();
+        }//x is an javascript Object
+        console.log(x.myFunctA());
+
+        let y = {
+            name:"deewakar jha",
+            addresss:"samastipur bihar","friends":['priyesh',"ankit",'aman',"kishan"]
+            //property with multiple vules
+        }
+        let z = ['priyesh',"ankit",'aman',"kishan"]
+        console.log(y);
+        //syntax for for loop;
+        //(initilization,condition,increment/decrement)
+
+        //old for loop
+        for (var j=0; j<=3; j++){
+            console.log(x);
+        }
+        // new for loop in javascript
+        z.forEach(element => {
+            console.log("My friend is"+" "+element);
+        });
+
+        //some new for loop
+        
+        let teachers = ['C D sir',"Bipin sir",'Kuldeep sir'];
+
+        /*
+        for(singlur of plural){
+            //block of code to be excuted
+            console.log(teacher);
+        }
+        */
+        for(teacher of teachers){
+            //block of code to be excuted
+            console.log(teacher);
+        }
+    </script>
+</body>
+</html>
